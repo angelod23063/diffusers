@@ -44,7 +44,7 @@ log_levels = {
     "critical": logging.CRITICAL,
 }
 
-_default_log_level = logging.WARNING
+_default_log_level = logging.DEBUG
 
 _tqdm_active = True
 
