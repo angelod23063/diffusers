@@ -1196,7 +1196,7 @@ def download_from_original_stable_diffusion_ckpt(
         model_type = original_config.model.params.cond_stage_config.target.split(".")[-1]
         logger.debug(f"no `model_type` given, `model_type` inferred as: {model_type}")
 
-    logger.debug(f"`model_type` is: {model_type}")
+    print(f"`model_type` is: {model_type}")
     if model_type == "FrozenOpenCLIPEmbedder":
     
         cfg = CLIPTextConfig(
