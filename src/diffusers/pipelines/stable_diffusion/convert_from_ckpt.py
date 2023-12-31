@@ -1342,7 +1342,7 @@ def download_from_original_stable_diffusion_ckpt(
                 safety_checker=None,
                 feature_extractor=None,
             )
-    elif model_type == "DefaultFrozenCLIPEmbedder":
+    elif model_type == "FrozenDefaultCLIPEmbedder":
         text_model_id = "openai/clip-vit-large-patch14"
         text_model = CLIPTextModel.from_pretrained(text_model_id)
         tokenizer = CLIPTokenizer.from_pretrained(text_model_id)
